@@ -1,6 +1,6 @@
-<div class="btn btn-dark"><%= link_to "new article",  new_article_path  %></div>
+
   <% @articles.each do |article|%>
-    <article>
+    <article class ="article">
     <h4><%= link_to article.title, article %></h4>
     <%= article.content[0..100] %>
   </article>
