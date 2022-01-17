@@ -17,7 +17,8 @@ class ArticlesController < ApplicationController
     redirect_to articles_path
   end
 
-  def edit; end
+  def edit;
+  end
 
   def update
     @article.update(article_params)
@@ -26,7 +27,7 @@ class ArticlesController < ApplicationController
 
   def destroy
     @article.destroy
-    redirect_to articles_path, notice: 'Article was successfully destroyed.'
+    redirect_to articles_path
   end
 
   private
